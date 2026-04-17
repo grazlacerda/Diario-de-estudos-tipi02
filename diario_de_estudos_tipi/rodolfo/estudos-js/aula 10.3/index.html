@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vaquinha do Rolê</title><style>body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c3e50;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }        .cartao {
+            background-color: #ecf0f1;
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 320px;
+            text-align: center;
+        }        h2 { margin-top: 0; color: #2980b9; }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 16px;
+        }        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        button:hover { background-color: #2ecc71; }
+        .texto-resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #c0392b;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="cartao">
+            <h2>Piquenique no Burle Marx 🌳</h2>
+            <p>Vamos rachar a conta!</p>
+            <input type="number" id="valorTotal" placeholder="Valor total dos lanches (R$)">
+            <input type="number" id="qtdPessoas" placeholder="Quantos amigos vão?">
+            <button onclick="calcularRacha()">Calcular o Pix</button>
+            <p id="resultado" class="texto-resultado"></p>
+        </div>
+        
+        <script src="script.js"></script></body></html>

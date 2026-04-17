@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer ></script>
+        <title>Missão Contador</title>
+    </head>
+    
+    <div class="card">
+        <h2>Projeto <span>Contador</span></h2>
+        <p>Quanto você tem guardado para o ingresso?</p>
+        
+        <div class="input-group">
+            <span class="cifrao">R$</span>
+            <input type="number" id="granaInput" placeholder="Ex: 500">
+        </div>
+
+        <button onclick="verificarIngresso()">Verificar Agora</button>
+
+        <p id="mensagemFinal" class="resultado"></p>
+    </div>
+
+</body>
+</html>

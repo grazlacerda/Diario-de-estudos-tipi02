@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle Portaria</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+    <div class="painel-portaria">
+        <h2>Portaria <span>Digital</span></h2>
+        
+        <div class="campo">
+            <label for="idadeCandidato">Sua Idade:</label>
+            <input type="number" id="idadeCandidato" placeholder="Ex: 20">
+        </div>
+
+        <div class="campo">
+            <label for="vipSelect">Possui convite VIP?</label>
+            <select id="vipSelect">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+        </div>
+
+        <button onclick="checarEntrada()">Verificar Entrada</button>
+
+        <div class="display-mensagem">
+            <p id="mensagemPortaria">Aguardando dados...</p>
+        </div>
+    </div>
+
+</body>
+</html>

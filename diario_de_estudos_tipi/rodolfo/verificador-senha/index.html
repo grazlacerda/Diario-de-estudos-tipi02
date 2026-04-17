@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Verificador de Senha</title>
+    </head>
+    <body>
+
+    <div class="card-seguranca">
+    <div class="cadeado">🔒</div>
+    <h2>Segurança da <span>Conta</span></h2>
+    <p>Crie uma senha para o seu cadastro:</p>
+    
+    <div class="campo-senha">
+        <input type="password" id="senhaInput" placeholder="Digite sua senha">
+    </div>
+
+    <button class="btn-validar" onclick="testarSenha()">Validar Senha</button>
+
+    <p id="mensagem" class="status-msg"></p>
+    
+    <small>Dica: Evite sequências óbvias.</small>
+</div>
+
+</body>
+</html>

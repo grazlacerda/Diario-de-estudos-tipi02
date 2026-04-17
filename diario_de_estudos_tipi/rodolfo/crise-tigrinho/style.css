@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Press+Start+2P&display=swap'); /* Esta é uma regra CSS que permite que você inclua conteúdo de outro arquivo */
+
+body {
+ background-image: url('fotos-gatinhos/Cats cute (1).jpg'); /* utilizando uma imagem como fundo do site */
+ font-family: 'Emilys Candy'; /* definindo fonte do texto */
+ display: flex; /* se tornam itens flexíveis e podem ser controlados por várias outras propriedades Flexbox. */
+ justify-content: center; /* Centralizar qualquer conjunto de elementos horizontalmente. */
+ align-items: center; /* serve para centralizar verticalmente os itens flexíveis */
+ height: 100vh; /* altura */
+ margin: 0; /* espaçamento externo*/
+ background-position: center bottom; /* coloca a imagem de fundo exatamente no meio da largura do elemento e na parte de baixo de sua altura. */
+ color: white; /* cor do texto */
+ text-shadow: 1px 1px gray; /* sombra nos textos */
+}
+
+/* Console Retrô */
+.iphone-15-pro-max {
+ background-color: #f0ddaa; /* cor de fundo */
+ width: 320px; /* largura */
+ height: 600px; /* altura */
+ border-radius: 35px; /* raio da borda */
+ border: 4px solid #b287cf; /* definições da borda */
+ box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+ /* sombra */
+ overflow: hidden; /* Recorta e oculta qualquer conteúdo que ultrapasse os limites definidos de width ou height do elemento. */
+ display: flex;
+ /* se tornam itens flexíveis e podem ser controlados por várias outras propriedades Flexbox. */
+ flex-direction: column; /* transforma os itens em coluna */
+ position: relative;
+} /* Permite que você use as propriedades de deslocamento */
+
+header {
+ background-color: #eed180; /* cor de fundo */
+ color: rgb(176, 131, 194); /* cor de texto */
+ padding: 15px; /* criar um espaço interno */
+ text-align: center; /*centralizará horizontalmente */
+ font-weight: bold;
+} /* tornar a fonte (o texto) de um elemento mais espessa */
+
+/* A CENA DO CRIME: É AQUI QUE VOCÊS TRABALHAM */
+.tela-jogo {
+ background-color: #9fbcc9; /* Fundo Dark Mode */
+ flex: 1; /* Ocupa o meio da tela */
+ padding: 10px; /* criar um espaço interno */
+ margin: 10px; /* espaçamento externo */
+ border: 2px solid #dd95ce; /* definições da borda */
+ border-radius: 30px; /* raio da borda */
+ overflow-y: auto; /* barra de rolagem vertical */
+ display: flex; /* se tornam itens flexíveis e podem ser controlados por várias outras propriedades Flexbox. */
+ justify-content: space-between;
+ /* distribuir uniformemente o espaço restante entre os itens flexíveis */
+ align-items: center; /*centralizará horizontalmente */
+ flex-wrap: wrap; /* quebra de linha */
+}
+
+/* Os Emojis (Itens) */
+.item img {
+ background-color: rgba(243, 227, 0, 0.74); /* cor de fundo */
+ border-radius: 180px; /* raio da borda */
+ width: 60px; /* largura */
+ height: 60px; /* altura */
+ margin: 4px; /* espaçamento externo */
+ /* Centraliza o emoji no quadrado */
+ display: flex; /* se tornam itens flexíveis e podem ser controlados por várias outras propriedades Flexbox. */
+ justify-content: center; /* centralizar horizontalmente os itens flexíveis */
+ align-items: center; /* centralizar verticalmente os itens flexíveis (filhos) dentro do contêiner Flexbox. */
+ border: 1px solid rgba(255,255,255,0.2); /* definições da borda */
+}
+.item img:hover /* estilo para quando o mouse estiver em cima do item */ {
+    transform: scale(1.2); /* aumenta os itens */
+    background-color: #031d4d; /*cor de fundo */
+}
+
+/* Botões */
+.controles {
+ padding: 15px; /* espaçamento interno */
+ display: flex; /* se tornam itens flexíveis e podem ser controlados por várias outras propriedades Flexbox. */
+ gap: 10px; /* definir espaçamento entre os itens */
+}
+
+.botao {
+ padding: 15px; /* espaçamento interno */
+ border: none; /* remover borda */
+ border-radius: 30px; /* raio da borda */
+ font-weight: bold; /* serve para tornar a fonte (o texto) de um elemento mais espessa */
+ cursor: pointer; /* alterar a aparência do cursor do mouse */
+ flex-grow: 1; /* capacidade de crescimento */
+ font-family: 'Emilys Candy'; /* fonte do texto */
+ text-shadow: 1px 1px gray; /* sombra do textp */
+}
+.deposito { background-color: #95ddb5; color: #ffffff; /* definições de cor do botão */ }
+.apostar { background-color: #e297dc; color: #f8f8f8; /* definições de cor do botão */ flex-grow:10; /* capacidade de crescimento do botão */}
+footer { text-align: center; color: #aaa; padding-bottom: 10px; /* definição do texto para o centro, cor e espaçamento interno a baixo */}
+
+.botao:hover /* estilo para quando o mouse estiver em cima do item */{
+    transform: scale(1.05); /* aumenta os itens */
+}
+
+.item.item-3 {
+    order:-2; /* posição do item */
+}
+
+h3 {
+    font-size: 30px; /* tamanho da fonte */
+}

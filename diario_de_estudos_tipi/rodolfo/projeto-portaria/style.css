@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.painel-portaria {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os campos */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 span {
+    color: #4fa1ff;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    background: #4fa1ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.display-mensagem {
+    margin-top: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensagemPortaria {
+    font-weight: 600;
+    text-align: center;
+}
